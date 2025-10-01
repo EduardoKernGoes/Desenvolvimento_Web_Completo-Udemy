@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+}
+
+body{
+    background: #f4f2ec url(../imagens/fundo.png) repeat-x;
+}
+
+a:link, a:active, a:visited{
+    color: #af670a;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #227115;
+}
+
+header{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+aside, #conteudo{
+    margin: 15px 0;
+}
+
+aside{
+    width: 32%;
+}
+
+aside h4{
+    text-transform: uppercase;
+    color: #915609;
+}
+
+nav ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    border-bottom: 1px solid #535858;
+}
+
+nav a{
+    font-size: 0.8em;
+    font-family: "Garamond", serif;
+    font-weight: bolder;
+    margin-right: 25px;
+}
+
+footer{
+    display: flex;
+    background: url(../imagens/fundo-rodape.png) no-repeat top center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+footer li{
+    padding: 25px 10px 10px 10px;
+    font-size: 0.8em;
+}
+
+footer li:hover{
+    background: linear-gradient(to bottom, rgb(230, 229, 229), white);
+}
+
+footer a:hover{
+    color:#53493e;
+}
+
+footer p{
+    margin-bottom: 10px;
+    font-size: 0.6em;
+    border-bottom: 1px solid rgb(160, 159, 159);
+}
+
+#conteudo{
+    width: 65%;
+    margin-right: 10px;
+}
+
+#container{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#logo a{
+    width: 248px;
+    height: 21px;
+    text-indent: -9999px;
+    display: block;
+    background: url(../imagens/logo.png);
+}
+
+#visita{
+    width: 310px;
+    margin-top: 15px;
+    padding: 20px;
+    background: #cdc8b1;
+}
+
+#visita h4{
+    margin-bottom: 5px;
+}
+
+#visita label, #visita input:not(:last-child){
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+#submit{
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    background:#b3a189;
+    color: rgb(247, 244, 244);
+}
+
+#submit:hover{
+    cursor: pointer;
+}
+
+#area_galeria{
+    width: 310px;
+    padding: 15px 20px;
+    background: rgb(226, 225, 225);
+}
+
+#galeria{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#conteudo section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+#conteudo section article{
+    padding: 20px;
+    width: 310px;
+}
+
+#conteudo section article h4{
+    text-transform: uppercase;
+    color: rgb(3, 82, 3);
+}
+
+#exposicoes ul{
+    padding-left: 30px;
+    font-size: 0.9em;
+}
+
+#exposicoes li>p{
+    padding-bottom: 7px;
+    color:#915609;
+}
+
+#exposicoes a, #historia a{
+    font-weight: bold;
+    list-style: none;
+}
+
+.foto{
+    margin: 10px;
+    padding: 20px 15px;
+    background: url(../imagens/fundo-foto.png);
+}

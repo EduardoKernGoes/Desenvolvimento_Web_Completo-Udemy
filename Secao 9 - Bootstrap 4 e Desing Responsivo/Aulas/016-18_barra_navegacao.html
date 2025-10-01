@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barras de Navegação</title>
+
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        xintegrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+    <body>
+
+        <!--Navegação
+            Tipos de navegação: nav-pills, nav-tabs
+            Opções de alinhamento: justify-content-center, justify-content-end, flex-column
+        -->
+        <h2>Navegação Simples / Abas</h2>
+        <ul class="nav justify-content-center">
+
+            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+
+        </ul>
+
+        <br><br>
+
+        <ul class="nav nav-tabs justify-content-end">
+
+            <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+
+        </ul>
+
+        <br><br>
+
+        <ul class="nav nav-pills flex-column">
+
+            <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+
+        </ul>
+
+        <br><hr><br>
+
+        <h2>Barra de Navegação Simples</h2>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="">Chalé Hotel</a>
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+
+            </ul>
+
+        </nav>
+
+        <br><hr><br>
+
+        <h2>Barra de Navegação com Menu Responsivo</h2>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="">Chalé Hotel</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+
+                <span class="navbar-toggler-icon"></span>
+                
+            </button>
+
+            <div id="navegacao" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+
+        <br><hr><br>
+
+        <h2>Barra de Navegação com Formulário</h2>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="">Chalé Hotel</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao2">
+
+                <span class="navbar-toggler-icon"></span>
+                
+            </button>
+
+            <div id="navegacao2" class="collapse navbar-collapse">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+
+                </ul>
+
+                <form class="form-inline">
+
+                    <input type="text" class="form-control" placeholder="pesquisar...">
+                    <button class="btn btn-outline-success">ok</button>
+
+                </form>
+
+            </div>
+
+        </nav>
+
+        <br><hr><br>
+
+        <h2>Barra de Navegação com Menu Dropdown</h2>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="">Chalé Hotel</a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao3">
+
+                <span class="navbar-toggler-icon"></span>
+                
+            </button>
+
+            <div id="navegacao3" class="collapse navbar-collapse">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="">Home</a>
+
+                    </li>
+
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="">Sobre</a>
+                    
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Serviços</a>
+
+                        <div class="dropdown-menu">
+
+                            <a class="dropdown-item" href="">Serviço 1</a>
+                            <a class="dropdown-item" href="">Serviço 2</a>
+                            <a class="dropdown-item" href="">Serviço 3</a>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <br><hr><br>
+
+        <!--Cores
+            Opções: bg-primary, bg-secondary, bg-success, bg-info, bg-warning, bg-danger, bg-light, bg-dark
+        -->
+        <h2>Cores</h2>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="">Chalé Hotel</a>
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+
+            </ul>
+
+        </nav>
+
+        <br><hr><br>
+
+        <!--Alinhamentos
+            Opções: fixed-top, fixed-bottom, sticky
+        -->
+        <h2>Alinhamentos</h2>
+        <nav class="navbar sticky-top navbar-expand navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="">Chalé Hotel</a>
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+
+            </ul>
+
+        </nav>
+
+        <br><br>
+        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+        <var>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium velit neque, sed molestie mauris condimentum id. Maecenas vulputate convallis lectus nec vehicula. Suspendisse porta elit ligula, nec tristique orci mollis et. Curabitur ullamcorper feugiat nibh nec semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vestibulum tristique sem volutpat porttitor. Ut hendrerit mauris cursus elit posuere, et vulputate felis egestas. Donec molestie metus convallis ligula laoreet, ut viverra ipsum iaculis.
+        </var>
+
+
+
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        xintegrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        xintegrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        xintegrity="sha384-JjSmVgyd0p3pXB1rRibZUa6h5/A/4mY/vUf/xXoJ6x2WqjH+I6WqjH+Jq3lV9q"
+        crossorigin="anonymous"></script>
+
+    </body>
+</html>

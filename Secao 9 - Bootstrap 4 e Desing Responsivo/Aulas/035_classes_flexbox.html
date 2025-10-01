@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Classes Flexbox</title>
+
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"xintegrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <style type="text/css">
+
+            .caixa{
+                background: #e6e5e5;
+                height: 200px;
+            }
+
+            .item{
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="container">
+
+            <h2>Flex container e flex itens (d-flex, flex-row, flex-column, flex-row-reverse)</h2>
+
+            <div class="caixa d-flex">
+
+                <div class="item">Flex Item 1</div>
+                <div class="item">Flex Item 2</div>
+                <div class="item">Flex Item 3</div>
+
+            </div>
+
+            <br><hr><br>
+
+            <h2>Alinhamento Horizontal: justify-content-ALINHAMENTO (start, center, end, around, between)</h2>
+
+            <div class="caixa d-flex justify-content-center">
+
+                <div class="item">Flex Item 1</div>
+                <div class="item">Flex Item 2</div>
+                <div class="item">Flex Item 3</div>
+
+            </div>
+
+            <br><hr><br>
+
+            <h2>Colunas (d-flex, flex-column, flex-column-reverse)</h2>
+
+            <div class="caixa flex-column-reverse">
+
+                <div class="item">Flex Item 1</div>
+                <div class="item">Flex Item 2</div>
+                <div class="item">Flex Item 3</div>
+
+            </div>
+
+            <br><hr><br>
+
+            <h2>Alinhamento Vertical: align-items-ALINHAMENTO (start, center, end, baseline, stretch)</h2>
+
+            <div class="caixa d-flex align-items-stretch">
+
+                <div class="item">Flex Item 1</div>
+                <div class="item">Flex Item 2</div>
+                <div class="item">Flex Item 3</div>
+
+            </div>
+
+            <br><hr><br>
+
+            <h2>Alinhamento Self: align-self-ALINHAMENTO (start, center, end, baseline, stretch)</h2>
+
+            <div class="caixa d-flex">
+
+                <div class="item align-self-start">Flex Item 1</div>
+                <div class="item align-self-center">Flex Item 2</div>
+                <div class="item align-self-end">Flex Item 3</div>
+                <div class="item align-self-baseline">Flex Item 4</div>
+                <div class="item align-self-stretch">Flex Item 5</div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        xintegrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        xintegrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        xintegrity="sha384-JjSmVgyd0p3pXB1rRibZUa6h5/A/4mY/vUf/xXoJ6x2WqjH+I6WqjH+Jq3lV9q"
+        crossorigin="anonymous"></script>
+        
+    </body>
+</html>

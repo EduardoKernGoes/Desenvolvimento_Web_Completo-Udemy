@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #home{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background: url(../imagens/capa.png), url(../imagens/ruido.png), linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: 'Helvetica', Arial, sans-serif;;
+}
+
+header nav{
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+footer{
+    background: black;
+    position: relative;
+}
+
+#facil h2, #facil p{
+    color: white;
+}
+
+#facil h2, #facil h3{
+    font-weight: bold;
+    letter-spacing: -0.08em
+}
+
+#facil h2{
+    font-size: 3em;
+}
+
+#facil h3{
+    font-size: 2em;
+    color: #9bf0e1;
+}
+
+#beneficios h1, #beneficios h3{
+    color:#7c25f8;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+}
+
+#home .col-md-12 h1{
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.links a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: #9bf0e1;
+}
+
+.links p{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+.links{
+    margin: 0 10px;
+}
+
+.rotacionar{
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #9bf0e1;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.botao_roxo{
+    background: #7c25f8;
+}
+
+.botao_roxo:hover{
+    background: #6207e3;
+    color:white
+}
+
+.botao_branco{
+    border: 2px solid white;
+}
+
+.botao_branco:hover{
+    background: white;
+    color: black;
+}
+
+/*Extra small devices (portraint phones)*/
+@media (max-width: 575.98px) {
+    .btn-custom{
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+/*Small devices (landscape phones)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #home .col-md-12 h1{
+        font-size: 3em;
+    }
+
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+/*Medium devices (tablets, 768px e superior)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #home .col-md-12 h1{
+        font-size: 4em;
+    }
+}
+
+/*Large devices (desktops, 992px e superior)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #home .col-md-12 h1{
+        font-size: 5em;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px e superior)*/
+@media ( min-width: 1200px) {
+    #home .col-md-12 h1{
+        font-size: 6em;
+    }
+}

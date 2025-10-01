@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Configurações do Grid</title>
+
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"xintegrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <style type="text/css">
+
+            .marcador{
+                background: #fe9d9d;
+                border: 1px solid #f94646;
+            }
+
+            .marcador_container{
+                background: #5bf946;
+                border: 1px solid #36ae26;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="container marcador_container">
+
+            <h2>Largura Fixa</h2>
+
+            <div class="row">
+
+                <div class="marcador col">Área 1</div>
+                <div class="marcador col">Área 2</div>
+                <div class="marcador col">Área 3</div>
+                <div class="marcador col">Área 4</div>
+
+            </div>
+
+            <br><hr><br>
+
+            <h2>Largura Automática (auto-layout)</h2>
+
+            <div class="row">
+
+                <div class="marcador col">Área 1</div>
+                <div class="marcador col-3">Área 2</div>
+                <div class="marcador col-6">Área 3</div>
+
+            </div>
+
+            <br><hr><br>
+
+            <h2>Largura Igual Empilhada</h2>
+
+            <div class="row">
+
+                <div class="marcador col-md">Área 1</div>
+                <div class="marcador col-md">Área 2</div>
+                <div class="marcador col-md">Área 3</div>
+
+            </div>
+
+            <br><hr><br>
+
+            <h2>Ordenado</h2>
+
+            <div class="row">
+
+                <div class="marcador col order-2">Área 1</div>
+                <div class="marcador col order-1">Área 2</div>
+                <div class="marcador col order-3">Área 3</div>
+
+            </div>
+
+            <br><hr><br>
+
+            <h2>offset</h2>
+
+            <div class="row">
+
+                <div class="marcador col-md-2 offset-md-5">login</div>
+
+            </div>
+
+            <br><hr><br>
+
+            <h2>offset múltiplos alinhamentos</h2>
+
+            <div class="row">
+
+                <div class="marcador col-md-3 offset-md-2">Conteúdo 1</div>
+                <div class="marcador col-md-3 offset-md-2">Conteúdo 2</div>
+
+            </div>
+
+            <br><hr><br>
+
+            <h2>Aninhamento</h2>
+
+            <div class="row">
+
+                <div class="col-md-6" style="border: 1px solid blue;">
+
+                    Conteúdo 1
+
+                    <div class="row">
+
+                        <div class="col-md-6 marcador">
+
+                            Contúdo 2
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        xintegrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        xintegrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        xintegrity="sha384-JjSmVgyd0p3pXB1rRibZUa6h5/A/4mY/vUf/xXoJ6x2WqjH+I6WqjH+Jq3lV9q"
+        crossorigin="anonymous"></script>
+        
+    </body>
+</html>

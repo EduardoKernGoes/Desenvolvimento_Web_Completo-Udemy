@@ -1,0 +1,20 @@
+body{
+    color: red;
+    border: 1px solid blue;
+}
+
+p{
+    color: grey;
+}
+
+h2{
+    color:blue;
+}
+
+h2.verde{
+    color: green;
+}
+
+h2#amarelo{
+    color:yellow;
+}
