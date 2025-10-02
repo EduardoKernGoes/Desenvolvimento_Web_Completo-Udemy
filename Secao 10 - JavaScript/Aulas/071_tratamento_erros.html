@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Script</title>
+
+        <script>
+
+            var video = Array()
+
+            video[1] = Array()
+            video[1]['nome'] = 'Naruto'
+            video[1]['categoria'] = 'Anime'
+
+            function getVideo(video){
+
+                try{
+
+                    console.log(video[0]['nome'])
+
+                }catch(e){
+
+                    console.log(e)
+
+                    console.log('O vídeo selecionado não esta mais diponível')
+
+                    throw new Error('Houve um erro')
+
+                }finally {
+
+                    console.log('A aplicação contínua aqui')
+
+                }
+
+                console.log('A aplicação funcionou')
+            }
+
+            getVideo(video)
+
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>
