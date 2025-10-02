@@ -12,6 +12,7 @@ var area = calcularAreaTerreno(largura, comprimento)
 document.write('O terreno possui ' + area + ' metros quadrados')
 */
 
+/*
 function soma (a, b) {
     a = a === undefined ? 0 : a
     b = b === undefined ? 0 : b
@@ -22,3 +23,19 @@ document.write(soma(7, 7) + '<br />')
 document.write(soma(7, 7, 9, 3) + '<br />')
 document.write(soma(7) + '<br />')
 document.write(soma() + '<br />')
+*/
+
+function soma(){
+    var resultado = 0
+
+    for(var i in arguments){
+        console.log(arguments[i])
+
+        resultado += arguments[i]
+    }
+
+    console.log(resultado)
+
+}
+
+console.log(soma(5, 7, 3.2, -4, 'teste'))
