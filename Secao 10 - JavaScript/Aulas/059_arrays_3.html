@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Script</title>
+    </head>
+    <body>
+
+        <script>
+
+            var lista = Array()
+
+            lista[0] = 'Banana'
+            lista[1] = 'Maça'
+            lista[2] = 'Laranja'
+            lista[3] = 'Morango'
+
+            //adiciona item no primeiro indice da lista
+            lista.unshift('Pêra')
+
+            //remove o item no primeiro indice da lista
+            lista.shift()
+
+            //adiciona item no último indice da lista
+            lista.push('Uva')
+
+            //remove o item no último indice da lista
+            lista.pop()
+
+            console.log(lista)
+
+            //-----------------------------------------------
+
+            var lista_coisas = Array()
+
+            lista_coisas['frutas'] = ['Banana', 'Morango', 'Uva', 'Melão']
+            lista_coisas['pessoas'] = ['João', 'Gabriel', 'Julia']
+
+            //adiciona item no primeiro indice da lista
+            lista_coisas['frutas'].unshift('Pêra')
+
+            //remove o item no primeiro indice da lista
+            lista_coisas['frutas'].shift()
+
+            //adiciona item no último indice da lista
+            lista_coisas['frutas'].push('Maça')
+
+            //remove o item no último indice da lista
+            lista_coisas['frutas'].pop()
+
+
+            //adiciona item no primeiro indice da lista
+            lista_coisas['pessoas'].unshift('Henrique')
+
+            //remove o item no primeiro indice da lista
+            lista_coisas['pessoas'].shift()
+
+            //adiciona item no último indice da lista
+            lista_coisas['pessoas'].push('Fernanda')
+
+            //remove o item no último indice da lista
+            lista_coisas['pessoas'].pop()
+
+            console.log(lista_coisas)
+
+        </script>
+        
+    </body>
+</html>

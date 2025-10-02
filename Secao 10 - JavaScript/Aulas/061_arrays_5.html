@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Script</title>
+    </head>
+    <body>
+
+        <script>
+
+            var lista = Array()
+
+            lista[0] = 'Banana'
+            lista[1] = 'Maça'
+            lista[2] = 'Laranja'
+            lista[3] = 'Morango'
+
+            console.log(lista)
+
+            console.log(lista.sort())
+
+
+            var lista2 = Array()
+
+            lista2[0] = 4
+            lista2[1] = 76
+            lista2[2] = 37
+            lista2[3] = 245
+
+            console.log(lista2)
+
+            console.log(lista2.sort(ordenaNumeros))
+
+            function ordenaNumeros(a, b){
+                return a - b
+                // < 0 = 'a' ordenado antes de 'b'
+                // > 0 = 'b' ordenado antes de 'a'
+                // == a oredem é mantida
+            }
+
+        </script>
+        
+    </body>
+</html>
