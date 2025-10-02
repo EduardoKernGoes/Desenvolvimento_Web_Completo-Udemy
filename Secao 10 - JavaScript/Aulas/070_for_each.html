@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Script</title>
+    </head>
+    <body>
+
+        <script>
+
+            var lista = ['Banana', 'Maça', 'Laranja', 'Uva', 'Bergamota', 'Morango', 'Melão']
+
+            console.log(lista)
+
+            lista.forEach(function(valor, indice, array) {
+
+                console.log('indice: ' + indice + ' | valor: ' + valor)
+
+                if(valor === 'Uva'){
+                array[indice] = 'Teste novo valor'
+                }
+
+            })
+
+            console.log(lista)
+
+            
+
+        </script>
+        
+    </body>
+</html>

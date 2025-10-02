@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Script</title>
+    </head>
+    <body>
+
+        <script>
+
+            var lista = ['Banana', 'Maça', 'Laranja', 'Uva', 'Bergamota', 'Morango', 'Melão']
+
+            var x = 0
+
+            console.log('Percorrendo a lista com o for: ')
+            console.log('')
+
+            for(x; x < lista.length; x++){
+                console.log(lista[x] + ' está na posição ' + (x + 1) + ' da lista')
+            }
+
+            x = 0
+
+            console.log('')
+            console.log('Percorrendo a lista com o while: ')
+            console.log('')
+
+            while(x < lista.length){
+                console.log(lista[x] + ' está na posição ' + (x + 1) + ' da lista')
+
+                x++
+            }
+
+            x = 0
+
+            console.log('')
+            console.log('Percorrendo a lista com o do-while: ')
+            console.log('')
+
+            do {
+                console.log(lista[x] + ' está na posição ' + (x + 1) + ' da lista')
+
+                x++
+            }while(x < lista.length)
+
+        </script>
+        
+    </body>
+</html>
