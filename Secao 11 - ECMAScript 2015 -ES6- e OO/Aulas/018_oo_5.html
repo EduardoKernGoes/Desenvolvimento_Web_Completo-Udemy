@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+
+        <script>
+
+            class Animal{
+                #cor
+                #tamanho
+
+                constructor(cor, tamanho){
+                    this.#cor = cor
+                    this.#tamanho = tamanho
+                }
+
+                dormir(){
+                    console.log('Dormir')
+                }
+            }
+
+            class Passaro extends Animal{
+                #bico = null
+
+                constructor(bico, cor, tamanho){
+                    super(cor, tamanho)
+                    this.#bico = bico
+                }
+
+                voar(){
+
+                    console.log('Voar')
+                }
+
+            }
+
+            class Papagaio extends Passaro{
+                #sabeFalar = null
+
+                constructor(sabeFalar, bico, cor, tamanho){
+                    super(bico, cor, tamanho)
+                    this.#sabeFalar = sabeFalar
+                }
+
+                falar(){
+                    console.log('Falar')
+                }
+
+            }
+
+            let passaro = new Passaro()
+            let papagaio = new Papagaio(true, 'Médio', 'Verde', 20)
+
+            console.log(passaro)
+            console.log(papagaio)
+        </script>
+
+    </head>
+    <body>
+
+        
+        
+    </body>
+</html>

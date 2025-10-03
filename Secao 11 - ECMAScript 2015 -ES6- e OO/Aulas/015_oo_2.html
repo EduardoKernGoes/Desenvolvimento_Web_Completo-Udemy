@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+
+        <script>
+
+            //paradigma procedural
+
+            /*
+            let qntPernas = 4
+            let giratoria = false
+            let cor = 'azul'
+
+            let cadeiras = Array()
+            
+            cadeiras[0] = Array()
+            cadeiras[0]['qnt_pernas'] = 4
+            cadeiras[0]['giratoria'] = false
+            cadeiras[0][cor] = 'Azul'
+
+            cadeiras[1] = Array()
+            cadeiras[1]['qnt_pernas'] = 1
+            cadeiras[1]['giratoria'] = true
+            cadeiras[1][cor] = 'Laranja'
+
+            function adicionar_cadeira(qnt_pernas, giratoria, cor){
+                let cadeira = Array()
+
+                cadeira['qnt_pernas'] = qntPernas
+                cadeira['giratoria'] = giratoria
+                cadeira['cor'] = cor
+
+                cadeiras.push(cadeira)
+            }
+
+            adicionar_cadeira(3, false, 'Verde')
+
+            function girar_cadeira(indice){
+                if(cadeiras[indice]['giratoria'] === true){
+                    console.log('Girou')
+                }else{
+                    console.log('A cadeira não é giratória')
+                }
+            }
+
+            girar_cadeira(2)
+            */
+
+
+
+            //paradigma OO
+
+            class Cadeiras {
+
+                constructor(qntPernas, giratoria, cor){
+                    this.qntPernas = qntPernas
+                    this.giratoria = giratoria
+                    this.cor = cor
+                }
+
+                girarCadeira(){
+                    if(this.giratoria === true){
+                    console.log('Girou')
+                }else{
+                    console.log('A cadeira não é giratória')
+                }
+                }
+
+            }
+
+            let cadeira = new Cadeiras(4, false, 'azul')
+            cadeira.girarCadeira()
+
+        </script>
+
+    </head>
+    <body>
+
+        
+        
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+
+        <script>
+
+            class Animal{
+                #cor
+                #tamanho
+
+                constructor(cor, tamanho){
+                    this.#cor = cor
+                    this.#tamanho = tamanho
+                }
+
+                dormir(){
+                    console.log('Dormir')
+                }
+            }
+
+            class Cachorro extends Animal{
+                #orelhas = 'grandes e caidas'
+
+                constructor(cor, tamanho){
+                    super(cor, tamanho)
+                }
+
+                correr(){
+
+                    console.log('Correr')
+                }
+
+                rosnar(){
+                    
+                    console.log('Rosnar')
+                }
+
+            }
+
+            class Passaro extends Animal{
+                #bico = 'curto'
+
+                constructor(cor, tamanho){
+                    super(cor, tamanho)
+                }
+
+                voar(){
+
+                    console.log('Voar')
+                }
+
+            }
+
+            class Papagaio extends Passaro{
+                #sabeFalar = true
+
+                constructor(cor, tamanho, bico){
+                    super(cor, tamanho, bico)
+                }
+
+                falar(){
+                    console.log('Falar')
+                }
+
+            }
+
+            let cachorro = new Cachorro('marrom', 30)
+            let passaro = new Passaro('branco', 10)
+            let papagaio = new Papagaio('verde', 20)
+
+
+            console.log(cachorro)
+            console.log(passaro)
+            console.log(papagaio)
+        </script>
+
+    </head>
+    <body>
+
+        
+        
+    </body>
+</html>
