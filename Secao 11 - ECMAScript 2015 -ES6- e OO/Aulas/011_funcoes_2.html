@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+
+        <script>
+
+            
+            /*
+            let quadrado = function(x = 5){
+                return x * x
+            }
+
+            let quadrado = (x = 5) => {
+                return x * x
+            }
+            */
+
+            let quadrado = x => x * x
+
+            document.write(quadrado(9))
+
+            /*
+            let parImpar = function(num){
+
+                if(num % 2 === 0){
+                    return 'par'
+                }else{
+                    return 'ímpar'
+                }
+
+            }
+            */
+
+            /*
+            let parImpar = num => {
+                if(num % 2 === 0){
+                    return 'par'
+                }else{
+                    return 'ímpar'
+                }
+            }
+            */
+
+            let parImpar = num => num % 2 === 0 ? 'par' : 'ímpar'
+
+            document.write(`<br /> ${parImpar(7)}`)
+            document.write(`<br /> ${parImpar(4)}`)
+
+        </script>
+
+    </head>
+    <body>
+
+        
+        
+    </body>
+</html>
