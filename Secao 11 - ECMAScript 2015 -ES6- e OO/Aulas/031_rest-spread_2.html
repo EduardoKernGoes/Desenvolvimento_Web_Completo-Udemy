@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+
+        <script>
+
+            function soma(...param){
+                let resultado = 0
+
+                console.log(param)
+
+                for(let i in param){
+                    resultado += param[i]
+                }
+
+                return resultado
+            }
+
+            console.log(soma(3, 8, 5, 7))
+
+            function multiplicacao(m, ...param){
+                let resultado = 0
+
+                console.log(param)
+                console.log(m)
+
+                param.forEach(v => resultado += m * v)
+
+                return resultado
+            }
+
+            console.log(multiplicacao(5, 7, 12, 3, 49))
+
+        </script>
+        
+    </body>
+</html>

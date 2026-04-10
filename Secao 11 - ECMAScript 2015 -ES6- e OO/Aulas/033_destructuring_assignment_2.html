@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+
+        <script>
+
+            let produto = {
+                descricao: 'Notebook',
+                preco: 1800,
+                detalhes: {
+                    fabricante: 'Dell',
+                    modelo: 'Inspiron 15'
+                }
+            }
+
+            //let {descricao, preco} = produto
+
+            //let {descricao: d, preco: p} = produto
+
+            //let {descricao: d, preco: p, desconto} = produto
+
+            //let {descricao: d, preco: p = 50, desconto = 5} = produto
+
+            let {detalhes: {fabricante: f, modelo: m}} = produto
+
+            console.log(f, m)
+
+        </script>
+        
+    </body>
+</html>

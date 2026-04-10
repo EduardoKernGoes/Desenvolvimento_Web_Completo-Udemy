@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECMAScript</title>
+    </head>
+    <body>
+
+        <script>
+
+            let Bicicleta1 = {
+                cor: 'Branca',
+                marcha: 'Única',
+                aro: 12,
+                pedalar() {
+                    console.log('Pedalando a bicicleta');
+                }
+            }
+
+            console.log(Bicicleta1);
+
+            letBicicletaFactory = function(cor, marcha, aro) {
+                return {
+                    cor,
+                    marcha,
+                    aro,
+                    pedalar() {
+                        console.log('Pedalando a bicicleta');
+                    }
+                }
+            }
+
+            let Bicicleta3 = letBicicletaFactory('Vermelha', '7', 26);
+            console.log(Bicicleta3);
+
+            console.log(Bicicleta3.cor);
+
+        </script>
+        
+    </body>
+</html>
